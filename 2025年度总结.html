@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2025年度总结.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="2025%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93">2025年度总结</h1>
+<p>年度总结适合在一个无聊的晚上开始写。</p>
+<h2 id="1%E8%B6%B3%E8%BF%B9%E5%9C%B0%E5%9B%BE">1.足迹地图</h2>
+<img src="images/足迹地图.jpg" alt="足迹地图" title="足迹地图" width="50%">
+<h3 id="tokyo29214">TOKYO（2.9~2.14）</h3>
+<p><img src="images/东京.jpg" alt=""></p>
+<blockquote>
+<p>幸福。想再去无数次。</p>
+</blockquote>
+<h3 id="%E8%A5%BF%E5%AE%8977710">西安（7.7~7.10）</h3>
+<p><img src="images/西安.jpg" alt=""></p>
+<blockquote>
+<p>西安的面食全都非常好吃，还想去。</p>
+</blockquote>
+<h3 id="%E6%88%90%E9%83%BD710713">成都（7.10~7.13）</h3>
+<p><img src="images/成都.jpg" alt=""></p>
+<blockquote>
+<p>好喜欢成都的火锅和辣子鸡，但是已经去过两次了短期内应该不会去了。</p>
+</blockquote>
+<h3 id="%E6%B9%96%E5%B7%9E8183">湖州（8.1~8.3）</h3>
+<p><img src="images/安吉.jpg" alt=""></p>
+<blockquote>
+<p>just去农家乐，正好圆了一个三丽鸥乐园的执念。</p>
+</blockquote>
+<h3 id="%E9%95%BF%E6%B2%9982991">长沙（8.29~9.1）</h3>
+<p><img src="images/长沙.jpg" alt=""></p>
+<blockquote>
+<p>长沙拥有全世界最好吃的小龙虾和全世界最好喝的奶茶。
+太好吃了。</p>
+</blockquote>
+<h3 id="%E9%A9%AC%E9%9E%8D%E5%B1%B1105107">马鞍山（10.5~10.7）</h3>
+<p><img src="images/马鞍山.jpg" alt=""></p>
+<blockquote>
+<p>人生第一次看音乐节，再也不会在酷暑看室外活动了。
+和朋友住得很开心。</p>
+</blockquote>
+<h3 id="%E7%BB%8D%E5%85%B412181220">绍兴（12.18~12.20）</h3>
+<p><img src="images/绍兴.jpg" alt=""></p>
+<blockquote>
+<p>绍兴拥有全世界最好吃的臭豆腐！！！！！</p>
+</blockquote>
+<p>*今年去了好多地方玩，好开心。</p>
+<hr>
+<h2 id="2%E6%B4%BB%E5%8A%A8">2.活动</h2>
+<h3 id="%E9%82%A6o">邦o</h3>
+<p><img src="images/无锡.jpg" alt=""></p>
+<h3 id="%E6%BC%AB%E5%8D%A1">漫卡</h3>
+<p><img src="images/漫卡.jpg" alt=""></p>
+<h3 id="%E4%B8%9C%E6%96%B9a%E5%92%96">东方A咖</h3>
+<p><img src="images/咖啡.jpg" alt=""></p>
+<h3 id="%E5%B0%8F%E6%9E%95%E7%94%9F%E6%97%A5">小枕生日()</h3>
+<p><img src="images/红.jpg" alt=""></p>
+<h3 id="%E7%A9%86%E7%A5%89%E4%B8%9E%E7%94%9F%E6%97%A5%E6%B5%B7%E5%BA%95%E6%8D%9E">穆祉丞生日海底捞()</h3>
+<p><img src="images/海底捞.jpg" alt="">
+*都好玩^ ^</p>
+<hr>
+<h2 id="3%E6%B8%B8%E6%88%8F">3.游戏</h2>
+<p>我感觉2025是我近年来玩游戏玩得最少的一年，但是还是玩到了会一直回味的好游戏，一个undertale一个神笔狗良。
+哦还有我打了好久东方永夜抄还是很菜，我要继续努力游玩弹幕游戏。
+<img src="images/游戏.png" alt="">
+舞萌龟速进步中，但还是玩得很开心的，体力上去了不少，虽然b1b2都是代但是跪求2026能把舞萌ra打到大概w58左右。。。
+还认识了不少新朋友，很开心^ ^
+<img src="images/舞萌.jpg" alt="">
+还有朱某天天拉着我打王者荣耀，虽然我还是很菜但是他还是送了我好多漂亮皮肤，好感激。
+<img src="images/药.jpg" alt="">
+以及这个人拉我打cs2让我觉得打枪还是蛮简单的嘛！！！</p>
+<hr>
+<h2 id="4%E7%A4%BE%E5%AA%92%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A">4.社媒年度报告</h2>
+<p><img src="images/报告.jpg" alt="">
+<img src="images/wyy.jpg" alt="">
+我无话可说啊，我今年最大的目标就是少刷点小红书和抖音！
+（还有少喝奶茶，谢谢。）</p>
+<hr>
+<h2 id="5%E7%88%B1%E5%A5%BD">5.爱好</h2>
+<p>今年最大的改变应该是去学了电吉他，现在半年了还是学得挺开心，目前在扒mygo的影色舞，希望下次上课前能弹好一点，我在豆瓣有发练琴记录楼，希望可以一直更新下去。</p>
+<img src="images/吉他.jpg" width="50%">
+<blockquote>
+<p>哎呀电吉他太美了我又想买把fender的ST。以后再说吧。</p>
+</blockquote>
+<p>然后放点约稿，不过还是希望自己2026有机会就多试试自己画画T T
+<img src="images/gj.jpg" alt=""></p>
+<blockquote>
+<p>我特么真哭尿了我女神能再开一次稿吗痴情的蓝章鱼再多等一世吧…</p>
+</blockquote>
+<p>一些制品
+<img src="images/zp.jpg" alt=""></p>
+<hr>
+<h2 id="6%E5%AD%A6%E6%A0%A1%E7%94%9F%E6%B4%BB">6.学校生活</h2>
+<p>今年也是无所事事的一年呵呵，大三上实在是太太太闲了，唯一值得一提的就是每周三去给初一小朋友上课了，放张上次结课的照片纪念一下。
+<img src="images/结课.jpg" alt="">
+还有就是考过了六级和信息科技教资的笔试，拿了个国创赛校奖(ˉ▽ˉ；)...奖学金也没拿到，好难过。
+也不想对今年定什么目标了，顺其自然吧。
+<img src="images/通过.jpg" alt=""></p>
+<hr>
+<p>好像没什么了，都凌晨3：12了我日，一写就止不住，该睡觉了，还有两天的假期用来赶期末大作业。~ (&gt;﹏&lt;) ~
+<strong>2026也会是很好的一年！开心健康就是万岁！</strong></p>
+<hr>
+<p>lsq于2026.1.3</p>
+
+</body>
+</html>
